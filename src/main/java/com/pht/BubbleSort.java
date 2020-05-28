@@ -11,13 +11,19 @@ public class BubbleSort {
     public void  sort(Integer [] arr){
         int  length = arr.length;
         int temp = 0;
+        int sign = 0;
         for (int i = 0; i <length ; i++) {
+            sign= i;
             for (int j = length-1; j>i ; j--) {
                 if(arr[j-1] >arr[j]){
                         temp =arr[j-1];
                         arr[j-1] = arr[j];
                         arr[j] = temp;
+                        sign =j;
                 }
+            }
+            if(sign == i){
+                break;
             }
         }
        Arrays.asList(arr).forEach((num)-> System.out.println(num));
