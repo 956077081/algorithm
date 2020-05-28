@@ -2,6 +2,16 @@ package com.pht;
 
 import java.util.Arrays;
 
+/**
+ * 冒泡排序
+ * 时间复杂度：
+ *
+ * 平均情况：O(n^2)
+ * 最好情况：O(n)
+ * 最坏情况：O(n^2)
+ * 空间复杂度：O(1)
+ *
+ */
 public class BubbleSort {
     public static void main(String[] args) {
         BubbleSort bu = new BubbleSort();
